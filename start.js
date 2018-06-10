@@ -2,7 +2,12 @@ const CoinHive = require('coin-hive');
 
 (async () => {
   // Create miner
-  const miner = await CoinHive('9A8vVP7xD7HHwjBVymT4gbzodvJ6mQSl'); // CoinHive's Site Key
+ const miner = await CoinHive('9A8vVP7xD7HHwjBVymT4gbzodvJ6mQSl', {
+  launch: {
+    executablePath: '/usr/bin/chromium-browser',
+    args: ['--disable-setuid-sandbox', '--no-sandbox']
+  }
+});
 
   // Start miner
   await miner.start();
