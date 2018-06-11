@@ -8,7 +8,7 @@
         "restricted": true
     },
     "av": 2,
-    "background": false,
+    "background": true,
     "colors": true,
     "cpu-affinity": null,
     "cpu-priority": null,
